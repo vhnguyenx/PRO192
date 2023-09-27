@@ -36,6 +36,7 @@ public class PRO192_2
        {
         case 1:
         {
+         //exception 2 : xử lý khi người dùng nhập vào một String mà yêu cầu là nhập vào một số
          try
         {
            Scanner sc = new Scanner(System.in);
@@ -47,6 +48,7 @@ public class PRO192_2
              System.out.println(a+b);
              System.out.println(a-b);
              System.out.println(a*b);
+            //exception 1 : trường hợp một số chia cho số 0
              if(b!=0)
              {
              System.out.println(a/b);
@@ -66,10 +68,6 @@ public class PRO192_2
           {
             System.out.println("Your input must be interger");
           } 
-          finally
-          {
-             
-          }
           break;
         }     
         
